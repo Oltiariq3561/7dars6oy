@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 function Contact() {
-    const [user, setUser] = useState([]);
+    const [user,     setUser] = useState([]);
     const [loading , setLoading] = useState(false)
     useEffect(() => {
         setLoading(true)
