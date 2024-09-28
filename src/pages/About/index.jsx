@@ -53,7 +53,7 @@ function App() {
         <div className=" flex flex-wrap justify-center gap-6 p-6">
             {products.map(function (product, index) {
                 return (
-                    <div key={index} className="max-w-sm w-80 bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden">
+                    <div key={index} className="max-w-sm w-96 bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden">
                         <img
                             className="w-full h-48 object-cover"
                             src={product.image}
