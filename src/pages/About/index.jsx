@@ -1,7 +1,7 @@
 import React from 'react';
 
 function App() {
-    const products = [
+    const cards = [
         {
             title: 'Avant-Garde Lamp',
             price: 179.99,
@@ -51,17 +51,13 @@ function App() {
 
     return (
         <div className=" flex flex-wrap justify-center gap-6 p-6">
-            {products.map(function (product, index) {
+            {cards.map(function (value, index) {
                 return (
                     <div key={index} className="max-w-sm w-96 bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden">
-                        <img
-                            className="w-full h-48 object-cover"
-                            src={product.image}
-                            alt={product.title}
-                        />
+                        <img className="w-full h-48 object-cover" src={value.image} alt={value.title} />
                         <div className="p-5 text-center">
-                            <h3 className="text-xl font-bold mb-2">{product.title}</h3>
-                            <p className="text-lg font-semibold text-gray-700">${product.price}</p>
+                            <h3 className="text-xl font-bold mb-2">{value.title}</h3>
+                            <p className="text-lg font-semibold text-gray-700">${value.price}</p>
                         </div>
                     </div>
                 );
